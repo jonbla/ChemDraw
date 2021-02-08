@@ -1,0 +1,587 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		93DCDD6F25D0E6CF00056B58 /* ChemDrawApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DCDD6E25D0E6CF00056B58 /* ChemDrawApp.swift */; };
+		93DCDD7125D0E6CF00056B58 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DCDD7025D0E6CF00056B58 /* ContentView.swift */; };
+		93DCDD7325D0E6D000056B58 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93DCDD7225D0E6D000056B58 /* Assets.xcassets */; };
+		93DCDD7625D0E6D000056B58 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93DCDD7525D0E6D000056B58 /* Preview Assets.xcassets */; };
+		93DCDD8125D0E6D000056B58 /* ChemDrawTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DCDD8025D0E6D000056B58 /* ChemDrawTests.swift */; };
+		93DCDD8C25D0E6D000056B58 /* ChemDrawUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DCDD8B25D0E6D000056B58 /* ChemDrawUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		93DCDD7D25D0E6D000056B58 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 93DCDD6325D0E6CF00056B58 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 93DCDD6A25D0E6CF00056B58;
+			remoteInfo = ChemDraw;
+		};
+		93DCDD8825D0E6D000056B58 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 93DCDD6325D0E6CF00056B58 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 93DCDD6A25D0E6CF00056B58;
+			remoteInfo = ChemDraw;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		93DCDD6B25D0E6CF00056B58 /* ChemDraw.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChemDraw.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		93DCDD6E25D0E6CF00056B58 /* ChemDrawApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChemDrawApp.swift; sourceTree = "<group>"; };
+		93DCDD7025D0E6CF00056B58 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		93DCDD7225D0E6D000056B58 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		93DCDD7525D0E6D000056B58 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		93DCDD7725D0E6D000056B58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		93DCDD7C25D0E6D000056B58 /* ChemDrawTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChemDrawTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		93DCDD8025D0E6D000056B58 /* ChemDrawTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChemDrawTests.swift; sourceTree = "<group>"; };
+		93DCDD8225D0E6D000056B58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		93DCDD8725D0E6D000056B58 /* ChemDrawUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChemDrawUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		93DCDD8B25D0E6D000056B58 /* ChemDrawUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChemDrawUITests.swift; sourceTree = "<group>"; };
+		93DCDD8D25D0E6D000056B58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		93DCDD6825D0E6CF00056B58 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93DCDD7925D0E6D000056B58 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93DCDD8425D0E6D000056B58 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		93DCDD6225D0E6CF00056B58 = {
+			isa = PBXGroup;
+			children = (
+				93DCDD6D25D0E6CF00056B58 /* ChemDraw */,
+				93DCDD7F25D0E6D000056B58 /* ChemDrawTests */,
+				93DCDD8A25D0E6D000056B58 /* ChemDrawUITests */,
+				93DCDD6C25D0E6CF00056B58 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		93DCDD6C25D0E6CF00056B58 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				93DCDD6B25D0E6CF00056B58 /* ChemDraw.app */,
+				93DCDD7C25D0E6D000056B58 /* ChemDrawTests.xctest */,
+				93DCDD8725D0E6D000056B58 /* ChemDrawUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		93DCDD6D25D0E6CF00056B58 /* ChemDraw */ = {
+			isa = PBXGroup;
+			children = (
+				93DCDD6E25D0E6CF00056B58 /* ChemDrawApp.swift */,
+				93DCDD7025D0E6CF00056B58 /* ContentView.swift */,
+				93DCDD7225D0E6D000056B58 /* Assets.xcassets */,
+				93DCDD7725D0E6D000056B58 /* Info.plist */,
+				93DCDD7425D0E6D000056B58 /* Preview Content */,
+			);
+			path = ChemDraw;
+			sourceTree = "<group>";
+		};
+		93DCDD7425D0E6D000056B58 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				93DCDD7525D0E6D000056B58 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		93DCDD7F25D0E6D000056B58 /* ChemDrawTests */ = {
+			isa = PBXGroup;
+			children = (
+				93DCDD8025D0E6D000056B58 /* ChemDrawTests.swift */,
+				93DCDD8225D0E6D000056B58 /* Info.plist */,
+			);
+			path = ChemDrawTests;
+			sourceTree = "<group>";
+		};
+		93DCDD8A25D0E6D000056B58 /* ChemDrawUITests */ = {
+			isa = PBXGroup;
+			children = (
+				93DCDD8B25D0E6D000056B58 /* ChemDrawUITests.swift */,
+				93DCDD8D25D0E6D000056B58 /* Info.plist */,
+			);
+			path = ChemDrawUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		93DCDD6A25D0E6CF00056B58 /* ChemDraw */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 93DCDD9025D0E6D000056B58 /* Build configuration list for PBXNativeTarget "ChemDraw" */;
+			buildPhases = (
+				93DCDD6725D0E6CF00056B58 /* Sources */,
+				93DCDD6825D0E6CF00056B58 /* Frameworks */,
+				93DCDD6925D0E6CF00056B58 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ChemDraw;
+			productName = ChemDraw;
+			productReference = 93DCDD6B25D0E6CF00056B58 /* ChemDraw.app */;
+			productType = "com.apple.product-type.application";
+		};
+		93DCDD7B25D0E6D000056B58 /* ChemDrawTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 93DCDD9325D0E6D000056B58 /* Build configuration list for PBXNativeTarget "ChemDrawTests" */;
+			buildPhases = (
+				93DCDD7825D0E6D000056B58 /* Sources */,
+				93DCDD7925D0E6D000056B58 /* Frameworks */,
+				93DCDD7A25D0E6D000056B58 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				93DCDD7E25D0E6D000056B58 /* PBXTargetDependency */,
+			);
+			name = ChemDrawTests;
+			productName = ChemDrawTests;
+			productReference = 93DCDD7C25D0E6D000056B58 /* ChemDrawTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		93DCDD8625D0E6D000056B58 /* ChemDrawUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 93DCDD9625D0E6D000056B58 /* Build configuration list for PBXNativeTarget "ChemDrawUITests" */;
+			buildPhases = (
+				93DCDD8325D0E6D000056B58 /* Sources */,
+				93DCDD8425D0E6D000056B58 /* Frameworks */,
+				93DCDD8525D0E6D000056B58 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				93DCDD8925D0E6D000056B58 /* PBXTargetDependency */,
+			);
+			name = ChemDrawUITests;
+			productName = ChemDrawUITests;
+			productReference = 93DCDD8725D0E6D000056B58 /* ChemDrawUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		93DCDD6325D0E6CF00056B58 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					93DCDD6A25D0E6CF00056B58 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					93DCDD7B25D0E6D000056B58 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 93DCDD6A25D0E6CF00056B58;
+					};
+					93DCDD8625D0E6D000056B58 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 93DCDD6A25D0E6CF00056B58;
+					};
+				};
+			};
+			buildConfigurationList = 93DCDD6625D0E6CF00056B58 /* Build configuration list for PBXProject "ChemDraw" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 93DCDD6225D0E6CF00056B58;
+			productRefGroup = 93DCDD6C25D0E6CF00056B58 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				93DCDD6A25D0E6CF00056B58 /* ChemDraw */,
+				93DCDD7B25D0E6D000056B58 /* ChemDrawTests */,
+				93DCDD8625D0E6D000056B58 /* ChemDrawUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		93DCDD6925D0E6CF00056B58 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93DCDD7625D0E6D000056B58 /* Preview Assets.xcassets in Resources */,
+				93DCDD7325D0E6D000056B58 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93DCDD7A25D0E6D000056B58 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93DCDD8525D0E6D000056B58 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		93DCDD6725D0E6CF00056B58 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93DCDD7125D0E6CF00056B58 /* ContentView.swift in Sources */,
+				93DCDD6F25D0E6CF00056B58 /* ChemDrawApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93DCDD7825D0E6D000056B58 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93DCDD8125D0E6D000056B58 /* ChemDrawTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93DCDD8325D0E6D000056B58 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93DCDD8C25D0E6D000056B58 /* ChemDrawUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		93DCDD7E25D0E6D000056B58 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 93DCDD6A25D0E6CF00056B58 /* ChemDraw */;
+			targetProxy = 93DCDD7D25D0E6D000056B58 /* PBXContainerItemProxy */;
+		};
+		93DCDD8925D0E6D000056B58 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 93DCDD6A25D0E6CF00056B58 /* ChemDraw */;
+			targetProxy = 93DCDD8825D0E6D000056B58 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		93DCDD8E25D0E6D000056B58 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		93DCDD8F25D0E6D000056B58 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		93DCDD9125D0E6D000056B58 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"ChemDraw/Preview Content\"";
+				DEVELOPMENT_TEAM = TMSRW3NA99;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = ChemDraw/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 0.0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.FrozenMaple.ChemDraw;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		93DCDD9225D0E6D000056B58 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"ChemDraw/Preview Content\"";
+				DEVELOPMENT_TEAM = TMSRW3NA99;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = ChemDraw/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 0.0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.FrozenMaple.ChemDraw;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Release;
+		};
+		93DCDD9425D0E6D000056B58 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TMSRW3NA99;
+				INFOPLIST_FILE = ChemDrawTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.FrozenMaple.ChemDrawTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ChemDraw.app/ChemDraw";
+			};
+			name = Debug;
+		};
+		93DCDD9525D0E6D000056B58 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TMSRW3NA99;
+				INFOPLIST_FILE = ChemDrawTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.FrozenMaple.ChemDrawTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ChemDraw.app/ChemDraw";
+			};
+			name = Release;
+		};
+		93DCDD9725D0E6D000056B58 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TMSRW3NA99;
+				INFOPLIST_FILE = ChemDrawUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.FrozenMaple.ChemDrawUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ChemDraw;
+			};
+			name = Debug;
+		};
+		93DCDD9825D0E6D000056B58 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TMSRW3NA99;
+				INFOPLIST_FILE = ChemDrawUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.FrozenMaple.ChemDrawUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ChemDraw;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		93DCDD6625D0E6CF00056B58 /* Build configuration list for PBXProject "ChemDraw" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				93DCDD8E25D0E6D000056B58 /* Debug */,
+				93DCDD8F25D0E6D000056B58 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		93DCDD9025D0E6D000056B58 /* Build configuration list for PBXNativeTarget "ChemDraw" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				93DCDD9125D0E6D000056B58 /* Debug */,
+				93DCDD9225D0E6D000056B58 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		93DCDD9325D0E6D000056B58 /* Build configuration list for PBXNativeTarget "ChemDrawTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				93DCDD9425D0E6D000056B58 /* Debug */,
+				93DCDD9525D0E6D000056B58 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		93DCDD9625D0E6D000056B58 /* Build configuration list for PBXNativeTarget "ChemDrawUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				93DCDD9725D0E6D000056B58 /* Debug */,
+				93DCDD9825D0E6D000056B58 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 93DCDD6325D0E6CF00056B58 /* Project object */;
+}
