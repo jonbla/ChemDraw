@@ -431,7 +431,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.FrozenMaple.ChemDraw;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 2;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -454,7 +454,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.FrozenMaple.ChemDraw;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 2;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -552,7 +552,7 @@
 				93DCDD8F25D0E6D000056B58 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		93DCDD9025D0E6D000056B58 /* Build configuration list for PBXNativeTarget "ChemDraw" */ = {
 			isa = XCConfigurationList;
@@ -561,7 +561,7 @@
 				93DCDD9225D0E6D000056B58 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		93DCDD9325D0E6D000056B58 /* Build configuration list for PBXNativeTarget "ChemDrawTests" */ = {
 			isa = XCConfigurationList;
@@ -570,7 +570,7 @@
 				93DCDD9525D0E6D000056B58 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		93DCDD9625D0E6D000056B58 /* Build configuration list for PBXNativeTarget "ChemDrawUITests" */ = {
 			isa = XCConfigurationList;
@@ -579,7 +579,7 @@
 				93DCDD9825D0E6D000056B58 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 	};
