@@ -31,10 +31,10 @@ struct Home : View {
         
         NavigationView{
             List {
-                Note(title: "Note 1")
-                Note(title: "Note 2")
-                Note(title: "Note 3")
-                Note(title: "Note 4")
+                Note(title: "Note 1", desc: "Extra Info Here")
+                Note(title: "Note 2", desc: "Extra Info Here")
+                Note(title: "Note 3", desc: "Extra Info Here")
+                Note(title: "Note 4", desc: "Extra Info Here")
             }
                 .navigationTitle("Notes")
 
@@ -76,14 +76,19 @@ struct DrawingView : UIViewRepresentable {
 
 struct Note: View {
     let title: String
+    let desc: String
     
     var body: some View {
-        HStack {
-            Text(title)
-                .font(.title)
-                .multilineTextAlignment(.center)
-            
-            Image(systemName: "pencil")
+        VStack {
+            HStack {
+                Text(title)
+                    .font(.title)
+                    .multilineTextAlignment(.center)
+                
+                Image(systemName: "pencil")
+            }
+            Text(desc)
+                .font(.footnote)
         }
     }
 }
