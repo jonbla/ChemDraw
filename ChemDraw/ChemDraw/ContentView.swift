@@ -18,6 +18,7 @@ struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         Group {
             ContentView()
+                .previewDevice("iPad Pro (11-inch) (2nd generation)")
                 .preferredColorScheme(.dark)
         }
     }
