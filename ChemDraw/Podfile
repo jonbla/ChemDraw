@@ -6,6 +6,9 @@ target 'ChemDraw' do
   use_frameworks!
 
   # Pods for ChemDraw
+  pod 'Firebase/Analytics'
+  pod 'Firebase/Auth'
+  pod 'Firebase/Storage'
 
   target 'ChemDrawTests' do
     inherit! :search_paths
