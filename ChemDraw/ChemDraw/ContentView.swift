@@ -32,17 +32,17 @@ struct Home : View {
         NavigationView{
             List {
                 Note(title: "Note 1")
+                Note(title: "Note 2")
+                Note(title: "Note 3")
+                Note(title: "Note 4")
             }
+                .navigationTitle("Notes")
 
 //            ScrollView {
             DrawingView(canvas: $canvas)
                 .navigationTitle("Drawing")
                 .navigationBarTitleDisplayMode(.inline)
                 .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.bottom/*@END_MENU_TOKEN@*/)
-                .scaledToFill()
-                .navigationBarItems(trailing: Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
-                    Image(systemName: "square.and.arrow.down")
-                }))
                 .scaledToFill()
 //            }
 //            .scaledToFill()
@@ -71,8 +71,12 @@ struct Note: View {
     let title: String
     
     var body: some View {
-        Text(title)
-            .font(.largeTitle)
-            .multilineTextAlignment(.center)
+        HStack {
+            Text(title)
+                .font(.title)
+                .multilineTextAlignment(.center)
+            
+            Image(systemName: "pencil")
+        }
     }
 }
