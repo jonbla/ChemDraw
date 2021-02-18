@@ -9,6 +9,7 @@ target 'ChemDraw' do
   pod 'Firebase/Analytics'
   pod 'Firebase/Auth'
   pod 'Firebase/Storage'
+  pod 'GoogleMLKit/DigitalInkRecognition'
 
   target 'ChemDrawTests' do
     inherit! :search_paths
