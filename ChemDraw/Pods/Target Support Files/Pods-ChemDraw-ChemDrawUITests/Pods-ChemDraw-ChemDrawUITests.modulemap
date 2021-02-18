@@ -1,0 +1,6 @@
+framework module Pods_ChemDraw_ChemDrawUITests {
+  umbrella header "Pods-ChemDraw-ChemDrawUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
