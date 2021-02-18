@@ -10,6 +10,7 @@
 		10639F96822AAC10EBB7D92F /* Pods_ChemDrawTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E02C27B5D7BBF1F4C3B77FDC /* Pods_ChemDrawTests.framework */; };
 		1654A03464169D9DD400D88A /* Pods_ChemDraw_ChemDrawUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76160989349BD9DBD6430E4A /* Pods_ChemDraw_ChemDrawUITests.framework */; };
 		26AA68ED4B89A4EFB56525A7 /* Pods_ChemDraw.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42363098E639A80C8F936EFD /* Pods_ChemDraw.framework */; };
+		9395F43F25DEE77100F91AA5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9395F43E25DEE77100F91AA5 /* GoogleService-Info.plist */; };
 		93DCDD6F25D0E6CF00056B58 /* ChemDrawApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DCDD6E25D0E6CF00056B58 /* ChemDrawApp.swift */; };
 		93DCDD7125D0E6CF00056B58 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DCDD7025D0E6CF00056B58 /* ContentView.swift */; };
 		93DCDD7325D0E6D000056B58 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93DCDD7225D0E6D000056B58 /* Assets.xcassets */; };
@@ -40,6 +41,7 @@
 		42363098E639A80C8F936EFD /* Pods_ChemDraw.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChemDraw.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		703DCB6A25CCD85D2CA1876F /* Pods-ChemDraw-ChemDrawUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChemDraw-ChemDrawUITests.release.xcconfig"; path = "Target Support Files/Pods-ChemDraw-ChemDrawUITests/Pods-ChemDraw-ChemDrawUITests.release.xcconfig"; sourceTree = "<group>"; };
 		76160989349BD9DBD6430E4A /* Pods_ChemDraw_ChemDrawUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChemDraw_ChemDrawUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9395F43E25DEE77100F91AA5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		93DCDD6B25D0E6CF00056B58 /* ChemDraw.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChemDraw.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		93DCDD6E25D0E6CF00056B58 /* ChemDrawApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChemDrawApp.swift; sourceTree = "<group>"; };
 		93DCDD7025D0E6CF00056B58 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -139,6 +141,7 @@
 				93DCDD7025D0E6CF00056B58 /* ContentView.swift */,
 				93DCDD7225D0E6D000056B58 /* Assets.xcassets */,
 				93DCDD7725D0E6D000056B58 /* Info.plist */,
+				9395F43E25DEE77100F91AA5 /* GoogleService-Info.plist */,
 				93DCDD7425D0E6D000056B58 /* Preview Content */,
 			);
 			path = ChemDraw;
@@ -282,6 +285,7 @@
 			files = (
 				93DCDD7625D0E6D000056B58 /* Preview Assets.xcassets in Resources */,
 				93DCDD7325D0E6D000056B58 /* Assets.xcassets in Resources */,
+				9395F43F25DEE77100F91AA5 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
