@@ -58,7 +58,14 @@ struct DrawingView : UIViewRepresentable {
     @Binding var canvas : PKCanvasView
     func makeUIView(context: Context) ->  PKCanvasView {
         canvas.drawingPolicy = .anyInput
+        canvas.tool = PKInkingTool(.pen, color: .red, width: 10)
 //        canvas.drawingPolicy = .pencilOnly
+        
+        //PKToolPicker
+        let toolPicker = PKToolPicker()
+        toolPicker.addObserver(canvas)
+        toolPicker.setVisible(true, forFirstResponder: canvas)
+        canvas.becomeFirstResponder()
         
         return canvas
     }
