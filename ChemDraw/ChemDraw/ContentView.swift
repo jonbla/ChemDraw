@@ -6,27 +6,88 @@
 //
 
 import SwiftUI
+import PencilKit
 
 struct ContentView: View {
     var body: some View {
-        VStack(alignment: .leading, spacing: 59.85) {
-            Text("Hello, world!")
-                .multilineTextAlignment(.leading)
-                .padding()
-                .font(/*@START_MENU_TOKEN@*/.largeTitle/*@END_MENU_TOKEN@*/)
-                .foregroundColor(/*@START_MENU_TOKEN@*/.green/*@END_MENU_TOKEN@*/)
-            Text(/*@START_MENU_TOKEN@*/"Placeholder"/*@END_MENU_TOKEN@*/)
-                .font(.footnote)
-                .fontWeight(.bold)
-                .foregroundColor(Color.black)
-        }
-        .frame(width: 775.096)
-            
+        Home()
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        Group {
+            ContentView()
+                .preferredColorScheme(.light)
+            ContentView()
+                .preferredColorScheme(.light)
+        }
+    }
+}
+
+//class Canvas: PKCanvasView {
+//
+//  override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+//    touches.forEach { touch in
+//      print("touch location \(touch.location(in: self))")
+//    }
+//  }
+//
+//}
+
+struct Home : View {
+    @State var canvas  = PKCanvasView()
+    @State var note = UIView();
+    var body: some View{
+        
+        NavigationView{
+            //            Draw View
+            NoteView(canvas: $note)
+                .navigationTitle("Cheat Sheet")
+                .navigationBarTitleDisplayMode(.inline)
+//            ScrollView {
+                DrawingView(canvas: $canvas)
+                    .navigationTitle("Drawing")
+                    .navigationBarTitleDisplayMode(.inline)
+                    .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.bottom/*@END_MENU_TOKEN@*/)
+                    .scaledToFill()
+                    .navigationBarItems(trailing: Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
+                        Image(systemName: "square.and.arrow.down")
+                    }))
+                    .scaledToFill()
+//            }
+//            .scaledToFill()
+//            .ignoresSafeArea()
+        }
+        .edgesIgnoringSafeArea(.bottom)
+    }
+}
+
+struct NoteView : UIViewRepresentable {
+    func updateUIView(_ uiView: UIView, context: Context) {
+    }
+    
+    
+//  get drawing for saving
+    @Binding var canvas : UIView
+    func makeUIView(context: Context) ->  UIView {
+        //canvas.drawingPolicy = .anyInput
+        
+        return canvas
+    }
+}
+
+struct DrawingView : UIViewRepresentable {
+    
+//  get drawing for saving
+    @Binding var canvas : PKCanvasView
+    func makeUIView(context: Context) ->  PKCanvasView {
+        canvas.drawingPolicy = .anyInput
+//        canvas.drawingPolicy = .pencilOnly
+        
+        return canvas
+    }
+    func updateUIView(_ uiView: PKCanvasView, context: Context) {
+        
     }
 }
