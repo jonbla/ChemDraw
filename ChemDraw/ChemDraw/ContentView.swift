@@ -25,70 +25,58 @@ struct ContentView_Previews: PreviewProvider {
 }
 
 struct Home : View {
-    @State var canvas  = PKCanvasView()
-    @State var note = UIView();
+    @State var landUI = UIView();
+    
     var body: some View{
-        
         NavigationView{
+            
             List {
                 Note(title: "Note 1", desc: "Extra Info Here")
                 Note(title: "Note 2", desc: "Extra Info Here")
                 Note(title: "Note 3", desc: "Extra Info Here")
                 Note(title: "Note 4", desc: "Extra Info Here")
             }
-                .navigationTitle("Notes")
-
-//            ScrollView {
-            DrawingView(canvas: $canvas)
-                .navigationTitle("Drawing")
-                .navigationBarTitleDisplayMode(.inline)
-                .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.bottom/*@END_MENU_TOKEN@*/)
-                .scaledToFill()
-//            }
-//            .scaledToFill()
-//            .ignoresSafeArea()
+            .navigationTitle("Notes")
+            
+            Landing(canvas: $landUI)
+                .navigationTitle("Landing")
+                .navigationBarTitleDisplayMode(/*@START_MENU_TOKEN@*/.inline/*@END_MENU_TOKEN@*/)
         }
         .edgesIgnoringSafeArea(.bottom)
     }
 }
 
-struct DrawingView : UIViewRepresentable {
-    
-//  get drawing for saving
-    @Binding var canvas : PKCanvasView
-    func makeUIView(context: Context) ->  PKCanvasView {
-        canvas.drawingPolicy = .anyInput
-        canvas.tool = PKInkingTool(.pen, color: .red, width: 10)
-//        canvas.drawingPolicy = .pencilOnly
-        
-        //PKToolPicker
-        let toolPicker = PKToolPicker()
-        toolPicker.addObserver(canvas)
-        toolPicker.setVisible(true, forFirstResponder: canvas)
-        canvas.becomeFirstResponder()
-        
-        return canvas
-    }
-    func updateUIView(_ uiView: PKCanvasView, context: Context) {
-        
-    }
-}
+
 
 struct Note: View {
     let title: String
     let desc: String
     
     var body: some View {
-        VStack {
-            HStack {
-                Text(title)
-                    .font(.title)
-                    .multilineTextAlignment(.center)
-                
-                Image(systemName: "pencil")
+        NavigationLink(destination: MainDrawingView()){
+            VStack {
+                HStack {
+                    Text(title)
+                        .font(.title)
+                        .multilineTextAlignment(.center)
+                    
+                    Image(systemName: "pencil")
+                }
+                Text(desc)
+                    .font(.footnote)
             }
-            Text(desc)
-                .font(.footnote)
         }
+    }
+}
+
+struct Landing : UIViewRepresentable {
+    @Binding var canvas : UIView
+    
+    func makeUIView(context: Context) -> UIView {
+        return canvas
+    }
+    
+    func updateUIView(_ uiView: UIView, context: Context) {
+        
     }
 }
