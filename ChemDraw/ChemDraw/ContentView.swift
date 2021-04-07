@@ -18,74 +18,65 @@ struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         Group {
             ContentView()
+                .previewDevice("iPad Pro (11-inch) (2nd generation)")
                 .preferredColorScheme(.dark)
         }
     }
 }
 
-//class Canvas: PKCanvasView {
-//
-//  override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-//    touches.forEach { touch in
-//      print("touch location \(touch.location(in: self))")
-//    }
-//  }
-//
-//}
-
 struct Home : View {
-    @State var canvas  = PKCanvasView()
-    @State var note = UIView();
+    @State var landUI = UIView();
+    
     var body: some View{
-        
         NavigationView{
-            //            Draw View
-            NoteView(canvas: $note)
-                .navigationTitle("Cheat Sheet")
-                .navigationBarTitleDisplayMode(.inline)
-//            ScrollView {
-                DrawingView(canvas: $canvas)
-                    .navigationTitle("Drawing")
-                    .navigationBarTitleDisplayMode(.inline)
-                    .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.bottom/*@END_MENU_TOKEN@*/)
-                    .scaledToFill()
-                    .navigationBarItems(trailing: Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
-                        Image(systemName: "square.and.arrow.down")
-                    }))
-                    .scaledToFill()
-//            }
-//            .scaledToFill()
-//            .ignoresSafeArea()
+            
+            List {
+                Note(title: "Note 1", desc: "Extra Info Here")
+                Note(title: "Note 2", desc: "Extra Info Here")
+                Note(title: "Note 3", desc: "Extra Info Here")
+                Note(title: "Note 4", desc: "Extra Info Here")
+            }
+            .navigationTitle("Notes")
+            
+            Landing(canvas: $landUI)
+                .navigationTitle("Landing")
+                .navigationBarTitleDisplayMode(/*@START_MENU_TOKEN@*/.inline/*@END_MENU_TOKEN@*/)
         }
         .edgesIgnoringSafeArea(.bottom)
     }
 }
 
-struct NoteView : UIViewRepresentable {
-    func updateUIView(_ uiView: UIView, context: Context) {
-    }
+
+
+struct Note: View {
+    let title: String
+    let desc: String
     
-    
-//  get drawing for saving
-    @Binding var canvas : UIView
-    func makeUIView(context: Context) ->  UIView {
-        //canvas.drawingPolicy = .anyInput
-        
-        return canvas
+    var body: some View {
+        NavigationLink(destination: MainDrawingView()){
+            VStack {
+                HStack {
+                    Text(title)
+                        .font(.title)
+                        .multilineTextAlignment(.center)
+                    
+                    Image(systemName: "pencil")
+                }
+                Text(desc)
+                    .font(.footnote)
+            }
+        }
     }
 }
 
-struct DrawingView : UIViewRepresentable {
+struct Landing : UIViewRepresentable {
+    @Binding var canvas : UIView
     
-//  get drawing for saving
-    @Binding var canvas : PKCanvasView
-    func makeUIView(context: Context) ->  PKCanvasView {
-        canvas.drawingPolicy = .anyInput
-//        canvas.drawingPolicy = .pencilOnly
-        
+    func makeUIView(context: Context) -> UIView {
         return canvas
     }
-    func updateUIView(_ uiView: PKCanvasView, context: Context) {
+    
+    func updateUIView(_ uiView: UIView, context: Context) {
         
     }
 }
